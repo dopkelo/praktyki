@@ -13,17 +13,17 @@
             <button type="button" onclick="Calculate(this.innerHTML)">-</button>
             <button type="button" onclick="Calculate(this.innerHTML)">x</button>   
             <button type="button" onclick="Calculate(this.innerHTML)">/</button>
-            <button type="button" onclick="Calculate(this.innerHTML)">log2</button>
+            <button type="button" onclick="Calculate(this.innerHTML)">pow</button>
+            <button type="button" onclick="Calculate(this.innerHTML)">log</button>
         </FORM>
         
         
-        <FORM id="palindrom">podaj wyraz<BR>
-            <INPUT TYPE="text" NAME="inputbox2" VALUE="" id="c"><P>
-            <input type="text" id="result2"/></form></P>
-            <button type="button" onclick="Palindrom(this.innerHTML)">sprawdz</button>
-                
+        <FORM NAME="palindromeForm" ACTION="" METHOD="GET">Enter something in the box: <BR>
+            <INPUT TYPE="text" NAME="inputbox2" VALUE=""><P>
+            <INPUT TYPE="button" NAME="button2" Value="Click" onClick="handlePalindromeForm(this.form)">
         </FORM>
         <div id="palindromeResult"></div>
+                
         <div>Anagram:</div>
         <FORM NAME="anagramForm" ACTION="" METHOD="GET">Enter something in the box: <BR>
             <INPUT TYPE="text" NAME="inputbox3" VALUE=""><P>
@@ -31,5 +31,11 @@
             <INPUT TYPE="button" NAME="button3" Value="Click" onClick="handleAnagramForm(this.form)">
         </FORM>
         <div id="anagramResult"></div>
+        <FORM NAME="rekurencjaForm" ACTION="" METHOD="GET">podaj liczby<BR>
+            <INPUT TYPE="text" NAME="inputbox5" VALUE=""><P>
+            <INPUT TYPE="text" NAME="inputbox6" VALUE=""><P></P>
+            <INPUT TYPE="button" NAME="button4" Value="Click" onClick="handlerekurencjaForm(this.form)">
+        </FORM>
+        <div id="rekurencjaResult"></div>
     </BODY>
     </HTML>
